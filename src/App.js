@@ -6,12 +6,12 @@ import About from './components/About';
 import { useState } from 'react';
 import Alert from './components/Alert';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -46,18 +46,18 @@ function App() {
   }
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <>
         <Navbar title="Packet" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container">
-          <Routes>
-            <Route exact path="/about" element={<About />} />
+          {/* <Routes> */}
+            {/* <Route exact path="/about" element={<About />} />
             <Route exact path="/" element={<TextForm heading="Enter the text to analyze" showAlert={showAlert} />} />
-          </Routes>
+          </Routes> */}
         </div>
       </>
-    </Router>
+    {/* </Router> */}
 
 
     </>
